@@ -1,5 +1,3 @@
-
-
 /*SORTEIO SÓLIDOS*/
 function sortear() {
 
@@ -43,12 +41,10 @@ function sortear() {
 }
 
 /* ------------------ CONTAGEM REGRESSIVA ---------------------- */
-let btn = document.getElementById('init');
-let val = document.getElementById('value');
+let cta = document.getElementById('init');
 let count = 6;
 
-btn.addEventListener('click', () => {
-  btn.disabled = true;
+$('.cta').prop("disabled", true).click(function() {
   counter = setInterval(() => {
     Count()
     playstart()
@@ -59,7 +55,7 @@ function Count() {
   count--;
   document.getElementById("time").innerText = count;
   if(count == 1) {
-    btn.disabled = false;
+    cta.disabled = false;
     clearInterval(counter);
     count = 05;
     window.location.href = "main.html"
