@@ -30,27 +30,27 @@ async function solidos() {
     } else if (mudar == 1) {
         document.getElementById("imagem-solido").innerHTML = "<img src='" + img[mudar] + "'>";
         document.getElementById("texto-solido").innerHTML = "O cone é um sólido geométrico obtido quando se tem uma pirâmide cuja base é um polígono regular, o número de lados da base tende ao infinito e a medida de lado do polígono tende a zero.";
-        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/solidos0002.png'>";
+        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/cone.png'>";
     } else if (mudar == 2) {
         document.getElementById("imagem-solido").innerHTML = "<img src='" + img[mudar] + "'>";
         document.getElementById("texto-solido").innerHTML = "Uma pirâmide quadrada é uma pirâmide que tem uma base quadrada. Se os lados da pirâmide são triângulos equiláteros e é um dos Sólidos de Johnson. Se o ápice está perpendicularmente acima do centro do quadrado, terá uma simetria C₄ᵥ. É constituída por 1 quadrado e 4 triângulos.";
-        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/solidos0003.png'>";
+        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/piramide.png'>";
     } else if (mudar == 3) {
         document.getElementById("imagem-solido").innerHTML = "<img src='" + img[mudar] + "'>";
         document.getElementById("texto-solido").innerHTML = "A esfera pode ser definida como uma sequência de pontos alinhados em todos os sentidos à mesma distância de um centro comum.";
-        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/solidos0004.png'>";
+        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/esfera.png'>";
     } else if (mudar == 4) {
         document.getElementById("imagem-solido").innerHTML = "<img src='" + img[mudar] + "'>";
         document.getElementById("texto-solido").innerHTML = "Paralelepípedo ou bloco retangular é a designação dada a um prisma cujas faces são paralelogramos. Um paralelepípedo tem seis faces, sendo que duas são idênticas e paralelas entre si. Os paralelepípedos podem ser retos ou oblíquos, consoante as suas faces laterais sejam perpendiculares ou não à base.";
-        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/solidos0005.png'>";
+        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/paralelepipedo.png'>";
     } else if (mudar == 5) {
         document.getElementById("imagem-solido").innerHTML = "<img src='" + img[mudar] + "'>";
         document.getElementById("texto-solido").innerHTML = "Um cubo ou hexaedro regular é um poliedro com 6 faces congruentes. Além disso, é um dos cinco sólidos platônicos, pois: cada face tem 4 arestas; de cada vértice partem 3 arestas; vale a relação de Euler: {V-A+F=2}, onde V representa o número de vértices, A o número de arestas e F o número de faces.";
-        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/solidos0006.png'>";
+        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/cubo.png'>";
     } else if (mudar == 6) {
         document.getElementById("imagem-solido").innerHTML = "<img src='" + img[mudar] + "'>";
-        document.getElementById("texto-solido").innerHTML = "Um cubo ou hexaedro regular é um poliedro com 6 faces congruentes. Além disso, é um dos cinco sólidos platônicos, pois: cada face tem 4 arestas; de cada vértice partem 3 arestas; vale a relação de Euler: {V-A+F=2}, onde V representa o número de vértices, A o número de arestas e F o número de faces.";
-        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/solidos0007.png'>";
+        document.getElementById("texto-solido").innerHTML = "Um cilindro é o objeto tridimensional delimitado pela superfície de translação completa de um segmento de reta que se move paralelamente a si mesmo, e se apoia em uma circunferência.";
+        document.getElementById("nav-solido").innerHTML = "<img src='assets/icons/cilindro.png'>";
         
     } else {
         console.error(img);
@@ -173,7 +173,7 @@ async function predict() {
                 solidos();
                 break;
             } else {
-                document.getElementById("image").innerHTML = "<img src='assets/images/mensagem1.png' style='width: 350px'>";
+                document.getElementById("image").innerHTML = "ainda não encontrei";
             }
         }// fim if proba
         else {
